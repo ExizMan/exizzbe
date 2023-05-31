@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'Crimson Text';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Crimson Text'),
+		url('/fonts/CrimsonText-BoldItalic.woff2') format('woff2'), 
+		url('/fonts/CrimsonText-BoldItalic.woff') format('woff'),
+		url('/fonts/CrimsonText-BoldItalic.ttf') format('ttf'),
+		url('/fonts/CrimsonText-BoldItalic.eot') format('eot');
+}
+
+body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    min-height: 98vh;
+    background: white;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+.headbox{
+    display: flex;
+    justify-content: center;
+    color:black;
+    background: radial-gradient(50% 50%, #ffffff, #cacee400);
+}
+.mainbox
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border: 2px;
+    border-color: black;
+    border-radius: 30px;
+    width: 360px;
+    padding: 20px;
+    padding-top: 5px;
+}
+.contentbox{
+    align-items: center;
+    width: inherit,80%;
+}
+.error{
+    position: relative;
+    left: 10px;
+    background-color: red;
+}
+.rsp
+{
+    
+    position: relative;
+    left: 10px;
+    bottom: 4px;
+    font-family: 'Crimson Text';
+	font-style: italic;
+    font-size:80%;
+    color:red;
+}
+.rsp[title]:hover:after {
+    content: attr(title);
+    background-color: rgba(128, 128, 128, 0.466);
+    border-radius: 5px;
+
+}
+.bd
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: 2px;
+    border-color: black;
+}
+a {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+#del
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border:none;
+    
+}
+#del:hover{
+    border-radius: 10px;
+    background: #CDFEAA;
+}
+#del:active {
+    background: #265301;
+    color: #CDFEAA;
+    border-radius: 10px;
+  }
+
+a {
+    outline: none;
+    text-decoration: none;
+    
+  }
+  
+  a:link {
+    color: #265301;
+  }
+  
+  a:visited {
+    color: #437A16;
+  }
+  
+  a:focus {
+    border-radius: 10px;
+    background: #BAE498;
+  }
+  
+  a:hover {
+    border-radius: 10px;
+    background: #CDFEAA;
+  }
+  
+  a:active {
+    background: #265301;
+    color: #CDFEAA;
+    border-radius: 10px;
+  }
